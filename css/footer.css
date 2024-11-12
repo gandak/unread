@@ -1,0 +1,347 @@
+.footer {
+  height: 550px;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 90px;
+}
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 60px;
+}
+.footer-contact {
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 400px;
+}
+.footer-contact img {
+  width: 134px;
+}
+.footer-contact .partnership {
+  background-image: url(../images/btn-black.png);
+  height: 90px;
+  width: 323px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 30px;
+  transition: translate 0.3s ease;
+  border-radius: 18px;
+}
+.footer-contact .partnership:hover {
+  translate: 10px 0px;
+}
+.footer-contact .partnership .button-title {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  font-family: "SF Display", Helvetica, Arial, sans-serif;
+}
+.footer-contact .partnership .footer-arrow {
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-contact .partnership .footer-arrow i {
+  background-color: black;
+  border-radius: 50%;
+  width: 36px;
+  height: 36px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* .footer-contact .partnership .footer-arrow i:hover {
+  background-color: #0078f6;
+  border: solid 6px #4f7ead;
+} */
+.partnership:hover .footer-arrow i {
+  background-color: #0078f6;
+  border: solid 6px #4f7ead;
+}
+.footer-contact .partnership p {
+  opacity: 0.5;
+  font-size: 12.6px;
+  font-weight: 300;
+}
+.footer-contact .partnership h6 {
+  font-size: 15px;
+  font-weight: 500;
+}
+.footer-arrow {
+  color: white;
+}
+.application {
+  /* width: 30; */
+  display: flex;
+  gap: 20px;
+}
+.application img {
+  width: 144px;
+  cursor: pointer;
+}
+
+/* FOOTER MENU  */
+.footer-menu {
+  width: 700px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-family: "SF Display", Helvetica, Arial, sans-serif;
+  padding: 10px 20px 10px 20px;
+}
+.footer-menu .copyright {
+  color: white;
+  opacity: 0.5;
+  font-size: 10.8px;
+  width: 66%;
+}
+.footer-menu .main-menu {
+  display: flex;
+  color: white;
+  gap: 10px;
+  font-size: 14.4px;
+  width: 60%;
+  cursor: pointer;
+}
+.footer-menu .sub-menu {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-menu .sub-menu1 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-menu .sub-menu h3 {
+  color: #0078f6;
+  font-weight: 700;
+  font-size: 14.4px;
+}
+.footer-menu .sub-menu p {
+  font-size: 12.6px;
+  color: #878787;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.footer-menu .sub-menu p:hover {
+  translate: 6px 0px;
+  color: white;
+}
+.footer-menu .sub-menu2 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  gap: 10px;
+}
+.footer-menu .sub-menu3 {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 30%;
+}
+.footer-menu .sub-menu3 h4 {
+  width: 150px;
+  font-size: 13px;
+  color: #878787;
+  font-weight: 500;
+}
+.footer-menu .sub-menu3 p {
+  color: white;
+}
+
+/* FOOTER SOCIAL  */
+.footer-sociallinks {
+  margin-top: 50px;
+  height: 50px;
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-sociallinks svg {
+  fill: #888888;
+  height: 32px;
+  width: 32px;
+  opacity: 0.5;
+}
+.footer-sociallinks #facebook:hover {
+  opacity: 1;
+  fill: #0078f6;
+}
+.footer-sociallinks #instagram:hover {
+  opacity: 1;
+  fill: #cd486b;
+}
+.footer-sociallinks #twitter:hover {
+  opacity: 1;
+  fill: #1da1f2;
+}
+.footer-sociallinks #linkedin:hover {
+  opacity: 1;
+  fill: #0077b5;
+}
+.footer-sociallinks #youtube:hover {
+  opacity: 1;
+  fill: #e20000;
+}
+.footer-sociallinks #soundcloud:hover {
+  opacity: 1;
+  fill: #ff7300;
+}
+
+@media screen and (max-width: 1199px) {
+  .footer {
+    max-width: 1000px;
+    margin: auto;
+  }
+  .footer-contact {
+    width: 35%;
+  }
+  .footer-contact .partnership {
+    width: 320px;
+  }
+  .footer-menu {
+    width: 60%;
+  }
+
+  .footer .application img {
+    width: 150px;
+  }
+
+  .footer-menu .main-menu {
+    width: 600px;
+  }
+
+  .footer-menu .sub-menu {
+    width: 600px;
+    /* gap: 5px; */
+  }
+  .footer-menu .sub-menu3 {
+    width: 260px;
+    margin-top: 30px;
+  }
+  .footer-menu .sub-menu1 {
+    width: 120px;
+  }
+  .footer-menu .sub-menu2 {
+    width: 120px;
+    margin-top: 25px;
+  }
+
+  .footer-sociallinks {
+    max-width: 1199px;
+    margin: auto;
+    margin-top: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    /* margin: 0px 20px; */
+    max-width: 728px;
+    margin: auto;
+    margin-bottom: 30px;
+  }
+  .footer-contact {
+    width: 40%;
+  }
+  .footer-contact .partnership {
+    width: 100%;
+  }
+  .footer-menu {
+    width: 50%;
+  }
+  .footer-menu .main-menu {
+    font-size: 13px;
+    translate: -60px;
+    margin-bottom: 40px;
+  }
+  .footer .application img {
+    width: 150px;
+  }
+  .footer-menu .copyright {
+    display: none;
+  }
+  .footer-menu .sub-menu {
+    flex-wrap: wrap;
+    width: 100%;
+    /* gap: 5px; */
+  }
+  .footer-menu .sub-menu3 {
+    width: 40%;
+    margin-top: 30px;
+  }
+  .footer-menu .sub-menu1 {
+    width: 33%;
+  }
+  .footer-menu .sub-menu2 {
+    width: 33%;
+    margin-top: 25px;
+  }
+  .footer-top {
+    gap: 10px;
+    margin-bottom: 180px;
+  }
+  .footer-sociallinks {
+    max-width: 700px;
+    margin-top: 250px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    margin: 0px 20px;
+    width: 560px;
+  }
+  .footer-contact {
+    width: 280px;
+  }
+  .footer-contact .partnership {
+    width: 280px;
+  }
+  .footer-menu {
+    width: 250px;
+  }
+  .footer-menu .main-menu {
+    display: none;
+  }
+  .footer .application img {
+    width: 125px;
+  }
+  .footer-menu .copyright {
+    display: none;
+  }
+  .footer-menu .sub-menu {
+    flex-wrap: wrap;
+    width: 220px;
+    /* gap: 5px; */
+  }
+  .footer-menu .sub-menu3 {
+    width: 240px;
+    margin-top: 30px;
+  }
+  .footer-menu .sub-menu1 {
+    width: 100px;
+  }
+  .footer-menu .sub-menu2 {
+    width: 100px;
+    margin-top: 25px;
+  }
+  .footer-top {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+}

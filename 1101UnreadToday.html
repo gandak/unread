@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Undread.today demo</title>
+    <link rel="stylesheet" href="CSS/index.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/header.css" />
+    <link rel="stylesheet" href="CSS/slider.css" />
+    <link rel="stylesheet" href="CSS/content.css" />
+    <link rel="stylesheet" href="CSS/footer.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script
+      src="https://kit.fontawesome.com/d99cd6860c.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="topbg">
+      <div class="top">
+        <div class="header">
+          <div class="navigation">
+            <div>
+              <div class="menu">
+                <img src="images/menus.svg" alt="" />
+              </div>
+              <div class="logo">
+                <img src="images/logo.png" alt="" />
+                <div class="vl"></div>
+                <div class="search">
+                  <img src="images/search.svg" alt="" />
+                  <input type="text" placeholder="Хайлт хийх" />
+                </div>
+              </div>
+            </div>
+            <div class="nextArticle">
+              <p>Дараагийн нийтлэл:</p>
+              <h4>#Random</h4>
+              <button>Өнөөдөр орно ●</button>
+              <div class="sociallinks">
+                <svg
+                  id="facebook"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+                  />
+                </svg>
+                <svg
+                  id="instagram"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
+                  />
+                </svg>
+                <svg
+                  id="twitter"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"
+                  />
+                </svg>
+                <svg
+                  id="linkedin"
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 448 512"
+                >
+                  <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+                  <path
+                    d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="featured">
+          <div class="featuredImage">
+            <img src="images/featuredImage.jpg" alt="" />
+          </div>
+          <div class="featuredArticleTitle">
+            <p>Өнөөдөр</p>
+            <div class="category">Зочинтой булан</div>
+            <h1>
+              BBC World Service - "The Climate Question” подкастын сэтгүүлч
+              Цогзоогийн журнал
+            </h1>
+            <div class="author">
+              <div>
+                <img src="images/author.jpg" alt="" />
+              </div>
+              <div>
+                <h5>Majigsuren Tsogbadrakh</h5>
+                <p class="date">11 сарын 1, 2024 8 мин</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+        <div class="slider-container">
+          <div class="sliderTitle"><p>Редакцын сонголт</p></div>
+          <div class="sliders">
+            <div class="slide1">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>10 ертөнц, 10 өнцөг</span></p>
+            </div>
+          </div>
+          <div class="slide2">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>Мэдүүштэй</span></p>
+            </div>
+          </div>
+          <div class="slide3">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>чөлөөт</span></p>
+            </div>
+          </div>
+          <div class="slide4">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>сонин</span></p>
+            </div>
+          </div>
+          <div class="slide5">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>techworm</span></p>
+            </div>
+          </div>
+          <div class="slide6">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>Мэдүүштэй</span></p>
+            </div>
+          </div>
+          <div class="slide7">
+            <div class="slideTop">
+              <div class="dot"></div>
+              <div class="postedTime">8 мин</div>
+            </div>
+            <div class="slideBottom">
+              <div class="views">
+                <div class="viewCounter">
+                  <i class="fa-solid fa-eye"></i>
+                  <p>0423</p>
+                </div>
+                <div class="commentCounter">
+                  <i class="fa-solid fa-comment"></i>
+                  <p>0</p>
+                </div>
+              </div>
+              <div class="bottomTitle">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+              </div>
+              <p class="bottomCategories"><span>10 ертөнц, 10 өнцөг</span></p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="midBG">
+      <div class="floatingArticles">
+        <div class="left vb">
+          <div class="author">
+            <div>
+              <img src="images/author.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Majigsuren Tsogbadrakh</h5>
+              <p class="date">11 сарын 1, 2024 8 мин</p>
+            </div>
+          </div>
+          <div class="floatingContainer">
+            <div class="floatingContent">
+              <div class="floatingCategory">Чөлөөт</div>
+              <div class="floatingTitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                labore!
+              </div>
+              <div class="commentCounter">
+                <i class="fa-solid fa-comment"></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="floatingImage">
+              <img src="images/floatimg1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="right vb">
+          <div class="author">
+            <div>
+              <img src="images/author.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Majigsuren Tsogbadrakh</h5>
+              <p class="date">11 сарын 1, 2024 8 мин</p>
+            </div>
+          </div>
+          <div class="floatingContainer">
+            <div class="floatingContent">
+              <div class="floatingCategory">Чөлөөт</div>
+              <div class="floatingTitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                labore!
+              </div>
+              <div class="commentCounter">
+                <i class="fa-solid fa-comment"></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="floatingImage">
+              <img src="images/floatimg1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="left vb">
+          <div class="author">
+            <div>
+              <img src="images/author.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Majigsuren Tsogbadrakh</h5>
+              <p class="date">11 сарын 1, 2024 8 мин</p>
+            </div>
+          </div>
+          <div class="floatingContainer">
+            <div class="floatingContent">
+              <div class="floatingCategory">Чөлөөт</div>
+              <div class="floatingTitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                labore!
+              </div>
+              <div class="commentCounter">
+                <i class="fa-solid fa-comment"></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="floatingImage">
+              <img src="images/floatimg1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="right vb">
+          <div class="author">
+            <div>
+              <img src="images/author.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Majigsuren Tsogbadrakh</h5>
+              <p class="date">11 сарын 1, 2024 8 мин</p>
+            </div>
+          </div>
+          <div class="floatingContainer">
+            <div class="floatingContent">
+              <div class="floatingCategory">Чөлөөт</div>
+              <div class="floatingTitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                labore!
+              </div>
+              <div class="commentCounter">
+                <i class="fa-solid fa-comment"></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="floatingImage">
+              <img src="images/floatimg1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="left vb">
+          <div class="author">
+            <div>
+              <img src="images/author.jpg" alt="" />
+            </div>
+            <div>
+              <h5>Majigsuren Tsogbadrakh</h5>
+              <p class="date">11 сарын 1, 2024 8 мин</p>
+            </div>
+          </div>
+          <div class="floatingContainer">
+            <div class="floatingContent">
+              <div class="floatingCategory">Чөлөөт</div>
+              <div class="floatingTitle">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum,
+                labore!
+              </div>
+              <div class="commentCounter">
+                <i class="fa-solid fa-comment"></i>
+                <p>0</p>
+              </div>
+            </div>
+            <div class="floatingImage">
+              <img src="images/floatimg1.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="gridArticles">
+        <div class="tabs">
+          <button class="button1">Өнгөрсөн 7 хоногт</button>
+          <button class="button">10/21 - 10/27</button>
+          <button class="button">10/14 - 10/20</button>
+          <button class="button">110/07 - 10/13</button>
+        </div>
+        <div class="grids">
+          <div class="grid1">
+            <div class="grid1-top">
+              <div class="gridArticle-title">
+                <div>
+                  <h6>7 Хоногийн Тойм</h6>
+                  <p>Аварга торгууль + Шинэ өрсөлдөгч + Чинээлэг эрхэм</p>
+                </div>
+              </div>
+              <div class="grid-postedMin">4 мин</div>
+            </div>
+            <div class="grid1-bottom">
+              <div class="grid1-bottom-article1">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Тогтвортой хөгжил</h6>
+                    <p>Тогтвортой ажил олголт гэж юу вэ? + Дотоодын</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+
+              <div class="grid1-bottom-article2">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Онцлох бизнес</h6>
+                    <p>IVA: Хиймэл оюунт харилцааны ажилтан,</p>
+                  </div>
+                  <div class="grid-postedMin">4 мин</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid2">
+            <div class="grid2-top">
+              <div class="grid2-top-article1">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Зочинтой булан</h6>
+                    <p>BBC World Service - "The Climate Question” подк...</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+              <div class="grid2-top-article2">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Тайлбарлах нь</h6>
+                    <p>Айдсыг тайлбарлах нь</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+            </div>
+            <div class="grid2-bottom">
+              <div class="grid2-bottom-article1">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Номын тухай</h6>
+                    <p>Аймшгийн баяраар унших 10 “аймшгийн” ном</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+              <div class="grid2-bottom-article2">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Techworm</h6>
+                    <p>Энэ оны Porsche Cayenne-аас онцлох 4 дэвшил</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="grids">
+          <div class="grid1">
+            <div class="grid1-top">
+              <div class="gridArticle-title">
+                <div>
+                  <h6>7 Хоногийн Тойм</h6>
+                  <p>Аварга торгууль + Шинэ өрсөлдөгч + Чинээлэг эрхэм</p>
+                </div>
+              </div>
+              <div class="grid-postedMin">4 мин</div>
+            </div>
+            <div class="grid1-bottom">
+              <div class="grid1-bottom-article1">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Тогтвортой хөгжил</h6>
+                    <p>Тогтвортой ажил олголт гэж юу вэ? + Дотоодын</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+
+              <div class="grid1-bottom-article2">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Онцлох бизнес</h6>
+                    <p>IVA: Хиймэл оюунт харилцааны ажилтан,</p>
+                  </div>
+                  <div class="grid-postedMin">4 мин</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="grid2">
+            <div class="grid2-top">
+              <div class="grid2-top-article1">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Зочинтой булан</h6>
+                    <p>BBC World Service - "The Climate Question” подк...</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+              <div class="grid2-top-article2">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Тайлбарлах нь</h6>
+                    <p>Айдсыг тайлбарлах нь</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+            </div>
+            <div class="grid2-bottom">
+              <div class="grid2-bottom-article1">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Номын тухай</h6>
+                    <p>Аймшгийн баяраар унших 10 “аймшгийн” ном</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+              <div class="grid2-bottom-article2">
+                <div class="gridArticle-title">
+                  <div>
+                    <h6>Techworm</h6>
+                    <p>Энэ оны Porsche Cayenne-аас онцлох 4 дэвшил</p>
+                  </div>
+                </div>
+                <div class="grid-postedMin">4 мин</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="footer-top">
+        <div class="footer-contact">
+          <img src="images/logo.png" alt="" />
+          <div class="partnership">
+            <div class="button-title">
+              <p>Хамтран ажиллах хүсэлт илгээх</p>
+              <h6>Контент нийтлүүлэх</h6>
+            </div>
+            <div class="footer-arrow">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="partnership">
+            <div class="button-title">
+              <p>Хамтран ажиллах хүсэлт илгээх</p>
+              <h6>Эвент дээр хамтрах</h6>
+            </div>
+            <div class="footer-arrow">
+              <i class="fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="application">
+            <img src="images/googleplay.png" alt="" />
+            <img src="images/appstore.png" alt="" />
+          </div>
+        </div>
+        <div class="footer-menu">
+          <div class="main-menu">
+            <p>Редакцын бодлого</p>
+            <p>•</p>
+            <p>Блог</p>
+            <p>•</p>
+            <p>Ажлын байр</p>
+            <p>•</p>
+            <p>Холбогдох</p>
+          </div>
+          <div class="copyright">
+            <p>
+              © 2015-2024 Анрид Медиа ХХК. Бүх эрх хуулиар хамгаалагдсан.
+              Контентуудыг зөвшөөрөлгүйгээр болон дурдалгүйгээр нийтлэх, хэвлэх,
+              эш татахыг хориглоно.
+            </p>
+          </div>
+          <div class="sub-menu">
+            <div class="sub-menu1">
+              <h3>Булангууд</h3>
+              <p>Онцлох бизнес</p>
+              <p>Techworm</p>
+              <p>Би хэрхэн ажилладаг вэ?</p>
+              <p>Мэдүүштэй</p>
+              <p>Чөлөөт</p>
+              <p>Номын тухай</p>
+              <p>7 хоногийн тойм</p>
+              <p>Өртөөлөгчид</p>
+            </div>
+            <div class="sub-menu2">
+              <p>Тогтвортой хөгжил</p>
+              <p>Тайлбарлах нь</p>
+              <p>10 ертөнц, 10 өнцөг</p>
+              <p>Таатай оффис</p>
+              <p>Зочинтой булан</p>
+              <p>8 минутын улс төр</p>
+              <p>Сонин</p>
+              <p>English</p>
+            </div>
+            <div class="sub-menu3">
+              <h3>Компани</h3>
+              <h4>
+                Улаанбаатар 14240 СБД, 8-р хороо, Амарын гудамж, Тэнгэрлиг медиа
+                групп
+              </h4>
+
+              <h4>+976 9921 2778</h4>
+              <h4>+976 8801 3893</h4>
+            </br>
+            <h4>Зочлох:</h4>
+            <p>www.unread.media</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer-sociallinks">
+        <svg
+          id="facebook"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64h98.2V334.2H109.4V256h52.8V222.3c0-87.1 39.4-127.5 125-127.5c16.2 0 44.2 3.2 55.7 6.4V172c-6-.6-16.5-1-29.6-1c-42 0-58.2 15.9-58.2 57.2V256h83.6l-14.4 78.2H255V480H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64z"
+          />
+        </svg>
+        <svg
+          id="instagram"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M194.4 211.7a53.3 53.3 0 1 0 59.3 88.7 53.3 53.3 0 1 0 -59.3-88.7zm142.3-68.4c-5.2-5.2-11.5-9.3-18.4-12c-18.1-7.1-57.6-6.8-83.1-6.5c-4.1 0-7.9 .1-11.2 .1c-3.3 0-7.2 0-11.4-.1c-25.5-.3-64.8-.7-82.9 6.5c-6.9 2.7-13.1 6.8-18.4 12s-9.3 11.5-12 18.4c-7.1 18.1-6.7 57.7-6.5 83.2c0 4.1 .1 7.9 .1 11.1s0 7-.1 11.1c-.2 25.5-.6 65.1 6.5 83.2c2.7 6.9 6.8 13.1 12 18.4s11.5 9.3 18.4 12c18.1 7.1 57.6 6.8 83.1 6.5c4.1 0 7.9-.1 11.2-.1c3.3 0 7.2 0 11.4 .1c25.5 .3 64.8 .7 82.9-6.5c6.9-2.7 13.1-6.8 18.4-12s9.3-11.5 12-18.4c7.2-18 6.8-57.4 6.5-83c0-4.2-.1-8.1-.1-11.4s0-7.1 .1-11.4c.3-25.5 .7-64.9-6.5-83l0 0c-2.7-6.9-6.8-13.1-12-18.4zm-67.1 44.5A82 82 0 1 1 178.4 324.2a82 82 0 1 1 91.1-136.4zm29.2-1.3c-3.1-2.1-5.6-5.1-7.1-8.6s-1.8-7.3-1.1-11.1s2.6-7.1 5.2-9.8s6.1-4.5 9.8-5.2s7.6-.4 11.1 1.1s6.5 3.9 8.6 7s3.2 6.8 3.2 10.6c0 2.5-.5 5-1.4 7.3s-2.4 4.4-4.1 6.2s-3.9 3.2-6.2 4.2s-4.8 1.5-7.3 1.5l0 0c-3.8 0-7.5-1.1-10.6-3.2zM448 96c0-35.3-28.7-64-64-64H64C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96zM357 389c-18.7 18.7-41.4 24.6-67 25.9c-26.4 1.5-105.6 1.5-132 0c-25.6-1.3-48.3-7.2-67-25.9s-24.6-41.4-25.8-67c-1.5-26.4-1.5-105.6 0-132c1.3-25.6 7.1-48.3 25.8-67s41.5-24.6 67-25.8c26.4-1.5 105.6-1.5 132 0c25.6 1.3 48.3 7.1 67 25.8s24.6 41.4 25.8 67c1.5 26.3 1.5 105.4 0 131.9c-1.3 25.6-7.1 48.3-25.8 67z"
+          />
+        </svg>
+        <svg
+          id="twitter"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M64 32C28.7 32 0 60.7 0 96V416c0 35.3 28.7 64 64 64H384c35.3 0 64-28.7 64-64V96c0-35.3-28.7-64-64-64H64zM351.3 199.3v0c0 86.7-66 186.6-186.6 186.6c-37.2 0-71.7-10.8-100.7-29.4c5.3 .6 10.4 .8 15.8 .8c30.7 0 58.9-10.4 81.4-28c-28.8-.6-53-19.5-61.3-45.5c10.1 1.5 19.2 1.5 29.6-1.2c-30-6.1-52.5-32.5-52.5-64.4v-.8c8.7 4.9 18.9 7.9 29.6 8.3c-9-6-16.4-14.1-21.5-23.6s-7.8-20.2-7.7-31c0-12.2 3.2-23.4 8.9-33.1c32.3 39.8 80.8 65.8 135.2 68.6c-9.3-44.5 24-80.6 64-80.6c18.9 0 35.9 7.9 47.9 20.7c14.8-2.8 29-8.3 41.6-15.8c-4.9 15.2-15.2 28-28.8 36.1c13.2-1.4 26-5.1 37.8-10.2c-8.9 13.1-20.1 24.7-32.9 34c.2 2.8 .2 5.7 .2 8.5z"
+          />
+        </svg>
+        <svg
+          id="linkedin"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 448 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z"
+          />
+        </svg>
+        <svg
+          id="youtube"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 576 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M549.7 124.1c-6.3-23.7-24.8-42.3-48.3-48.6C458.8 64 288 64 288 64S117.2 64 74.6 75.5c-23.5 6.3-42 24.9-48.3 48.6-11.4 42.9-11.4 132.3-11.4 132.3s0 89.4 11.4 132.3c6.3 23.7 24.8 41.5 48.3 47.8C117.2 448 288 448 288 448s170.8 0 213.4-11.5c23.5-6.3 42-24.2 48.3-47.8 11.4-42.9 11.4-132.3 11.4-132.3s0-89.4-11.4-132.3zm-317.5 213.5V175.2l142.7 81.2-142.7 81.2z"
+          />
+        </svg>
+        <svg
+          id="soundcloud"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 640 512"
+        >
+          <!--!Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.-->
+          <path
+            d="M639.8 298.6c-1.3 23.1-11.5 44.8-28.4 60.5s-39.2 24.4-62.3 24.1h-218c-4.8 0-9.4-2-12.8-5.4s-5.3-8-5.3-12.8V130.2c-.2-4 .9-8 3.1-11.4s5.3-6.1 9-7.7c0 0 20.1-13.9 62.3-13.9c25.8 0 51.1 6.9 73.3 20.1c17.3 10.2 32.3 23.8 44.1 40.1s20 34.8 24.2 54.4c7.5-2.1 15.3-3.2 23.1-3.2c11.7-.1 23.3 2.2 34.2 6.7S606.8 226.6 615 235s14.6 18.3 18.9 29.3s6.3 22.6 5.9 34.3zm-354-153.5c.1-1 0-2-.3-2.9s-.8-1.8-1.5-2.6s-1.5-1.3-2.4-1.7s-1.9-.6-2.9-.6s-2 .2-2.9 .6s-1.7 1-2.4 1.7s-1.2 1.6-1.5 2.6s-.4 1.9-.3 2.9c-6 78.9-10.6 152.9 0 231.6c.2 1.7 1 3.3 2.3 4.5s3 1.8 4.7 1.8s3.4-.6 4.7-1.8s2.1-2.8 2.3-4.5c11.3-79.4 6.6-152 0-231.6zm-44 27.3c-.2-1.8-1.1-3.5-2.4-4.7s-3.1-1.9-5-1.9s-3.6 .7-5 1.9s-2.2 2.9-2.4 4.7c-7.9 67.9-7.9 136.5 0 204.4c.3 1.8 1.2 3.4 2.5 4.5s3.1 1.8 4.8 1.8s3.5-.6 4.8-1.8s2.2-2.8 2.5-4.5c8.8-67.8 8.8-136.5 .1-204.4zm-44.3-6.9c-.2-1.8-1-3.4-2.3-4.6s-3-1.8-4.8-1.8s-3.5 .7-4.8 1.8s-2.1 2.8-2.3 4.6c-6.7 72-10.2 139.3 0 211.1c0 1.9 .7 3.7 2.1 5s3.1 2.1 5 2.1s3.7-.7 5-2.1s2.1-3.1 2.1-5c10.5-72.8 7.3-138.2 .1-211.1zm-44 20.6c0-1.9-.8-3.8-2.1-5.2s-3.2-2.1-5.2-2.1s-3.8 .8-5.2 2.1s-2.1 3.2-2.1 5.2c-8.1 63.3-8.1 127.5 0 190.8c.2 1.8 1 3.4 2.4 4.6s3.1 1.9 4.8 1.9s3.5-.7 4.8-1.9s2.2-2.8 2.4-4.6c8.8-63.3 8.9-127.5 .3-190.8zM109 233.7c0-1.9-.8-3.8-2.1-5.1s-3.2-2.1-5.1-2.1s-3.8 .8-5.1 2.1s-2.1 3.2-2.1 5.1c-10.5 49.2-5.5 93.9 .4 143.6c.3 1.6 1.1 3.1 2.3 4.2s2.8 1.7 4.5 1.7s3.2-.6 4.5-1.7s2.1-2.5 2.3-4.2c6.6-50.4 11.6-94.1 .4-143.6zm-44.1-7.5c-.2-1.8-1.1-3.5-2.4-4.8s-3.2-1.9-5-1.9s-3.6 .7-5 1.9s-2.2 2.9-2.4 4.8c-9.3 50.2-6.2 94.4 .3 144.5c.7 7.6 13.6 7.5 14.4 0c7.2-50.9 10.5-93.8 .3-144.5zM20.3 250.8c-.2-1.8-1.1-3.5-2.4-4.8s-3.2-1.9-5-1.9s-3.6 .7-5 1.9s-2.3 2.9-2.4 4.8c-8.5 33.7-5.9 61.6 .6 95.4c.2 1.7 1 3.3 2.3 4.4s2.9 1.8 4.7 1.8s3.4-.6 4.7-1.8s2.1-2.7 2.3-4.4c7.5-34.5 11.2-61.8 .4-95.4z"
+          />
+        </svg>
+      </div>
+    </div>
+  </body>
+</html>
